@@ -14,7 +14,18 @@ class Coas extends Component {
       .then((data) => this.setState({ coas: data }));
   }
   render() {
-    return <div>COA</div>;
+    const coaItems = this.state.coas.map((coa) => (
+      <div key={coa.id}>
+        <h3>{coa.title}</h3>
+        <p>{coa.body}</p>
+      </div>
+    ));
+    return (
+      <div>
+        COA
+        {coaItems}
+      </div>
+    );
   }
 }
 

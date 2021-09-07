@@ -1,4 +1,5 @@
 import './App.css';
+import CoaForm from './components/CoaForm';
 import Coas from './components/Coas';
 
 function App() {
@@ -6,6 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Certificate of Analysis</p>
+        <CoaForm />
+        <hr />
         <Coas />
       </header>
     </div>
